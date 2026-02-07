@@ -507,6 +507,7 @@ a {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
 }
 
 .backdrop.is-open {
@@ -548,6 +549,8 @@ a {
     border-radius: 100%;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal:hover,
@@ -556,3 +559,70 @@ a {
     background-color: #404bbf;
     fill: #fff;
 }
+
+.modal-par {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    width: 360px;
+    margin-bottom: 16px;
+}
+
+.fild-wraper {
+    margin-bottom: 8px;
+}
+
+.label-name {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+
+.text-fild {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    height: 40px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 11px 38px;
+}
+
+.text-fild:focus,
+.comment-fild:focus {
+    border: 1px solid #4d5ae5;
+    outline: none;
+}
+
+.comment-fild {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    padding: 8px 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
+}
+
+.accent {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.accent-link {
+    text-decoration: underline;
+}
+
+.accent-link:hover,
+.accent-link:focus {
+    text-decoration: none;
+}
+
