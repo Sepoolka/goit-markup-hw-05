@@ -476,6 +476,8 @@ a {
     margin-right: 24px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 264px;
+    height: 40px;
 }
 
 .footer-fild::placeholder {
@@ -615,6 +617,10 @@ a {
     stroke: rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close-modal:hover,
@@ -622,6 +628,15 @@ a {
     border: 0;
     background-color: #404bbf;
     fill: #fff;
+}
+
+.close-modal:hover .icon-close-modal,
+.close-modal:focus .icon-close-modal {
+    fill: #fff;
+}
+
+.icon-close-modal {
+    fill: #2e2f42;
 }
 
 .modal-par {
@@ -719,6 +734,7 @@ a {
     fill: none;
 }
 
+
 .term-box:checked + .terms-label .custom-checkbox {
     background-color: #404bbf;
     border: 1px solid #404bbf;
@@ -730,6 +746,7 @@ a {
 .term-box:focus + .terms-label .custom-checkbox {
     border: 1px solid #4d5ae5;
     outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .terms-label {
