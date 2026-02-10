@@ -445,6 +445,7 @@ a {
 .footer-container {
     display: block;
     width: 264px;
+    margin-right: 120px;
 }
 
 .social-media {
@@ -460,6 +461,10 @@ a {
     align-items: baseline;
     justify-content: space-between;
     margin-top: 16px;
+}
+
+.footer-subscribe {
+    margin-left: auto;
 }
 
 .footer-mail-txt {
@@ -541,11 +546,11 @@ a {
 .footer-social {
     display: block;
     width: 208px;
+    margin-right: 80px;
 }
 
 .footerbox {
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 
